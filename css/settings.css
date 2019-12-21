@@ -1,0 +1,158 @@
+* {
+  outline: none; }
+
+html {
+  height: 100%; }
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #393939;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 400px; }
+
+.wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+  .wrapper.sucsess {
+    display: none; }
+  .wrapper input {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 210px;
+    padding: 0 5px;
+    min-height: 51px;
+    margin: 7px;
+    max-width: 70%;
+    border: 2px solid #2E2E2E;
+    -webkit-border-radius: 17px 0 17px 0;
+            border-radius: 17px 0 17px 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(#F8F8F8), to(#ffffff));
+    background: -webkit-linear-gradient(top, #F8F8F8, #ffffff);
+    background: -o-linear-gradient(top, #F8F8F8, #ffffff);
+    background: linear-gradient(180deg, #F8F8F8, #ffffff);
+    text-align: center;
+    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+    font-family: calibri;
+    font-weight: 900;
+    font-size: 19px;
+    color: #434343; }
+    .wrapper input::-webkit-input-placeholder {
+      opacity: 1; }
+    .wrapper input::-moz-placeholder {
+      opacity: 1; }
+    .wrapper input:-ms-input-placeholder {
+      opacity: 1; }
+    .wrapper input::-ms-input-placeholder {
+      opacity: 1; }
+    .wrapper input::placeholder {
+      opacity: 1; }
+    .wrapper input:focus::-webkit-input-placeholder {
+      color: transparent; }
+    .wrapper input:focus::-moz-placeholder {
+      color: transparent; }
+    .wrapper input:focus:-moz-placeholder {
+      color: transparent; }
+    .wrapper input:focus:-ms-input-placeholder {
+      color: transparent; }
+
+.submit {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 220px;
+  min-height: 51px;
+  max-width: 70%;
+  margin: 35px auto 30px auto;
+  cursor: pointer;
+  border: 2px solid #2E2E2E;
+  -webkit-border-radius: 0 17px 0 17px;
+          border-radius: 0 17px 0 17px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#F8F8F8), to(#ffffff));
+  background: -webkit-linear-gradient(top, #F8F8F8, #ffffff);
+  background: -o-linear-gradient(top, #F8F8F8, #ffffff);
+  background: linear-gradient(180deg, #F8F8F8, #ffffff);
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+  font-family: calibri;
+  font-weight: 900;
+  font-size: 19px;
+  color: #434343; }
+
+.error {
+  text-align: center;
+  width: 225px;
+  opacity: 0;
+  margin: 15px 0 4px 0;
+  border: none;
+  font-family: calibri;
+  font-weight: 900;
+  font-size: 19px;
+  color: red;
+  line-height: 18px; }
+  .error.active {
+    opacity: 1 !important; }
+
+.wrapper .sucsess {
+  color: #fff;
+  font-family: calibri;
+  font-weight: 900;
+  font-size: 19px;
+  margin: 0;
+  margin-bottom: 5px; }
+
+.wrapper a {
+  color: #434343;
+  text-decoration: none; }
+
+.wrapper .to_main {
+  margin: 0; }

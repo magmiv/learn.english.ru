@@ -1,0 +1,229 @@
+* 
+	outline: none
+
+.form
+	width: 100%
+	height: 100%
+	display: flex
+	flex-direction: column
+
+.wrapper-of-upper-inputs
+	background-color: #FFFFFF
+	width: 100%
+	min-height: 176px
+	max-height: 176px
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-direction: column
+
+
+.wrapper-of-inputs
+	display: flex
+	background: linear-gradient(180deg, #F8F8F8, #ffffff)
+	box-shadow: 0 0 3px rgba(0,0,0,0.5)
+	border: 2px solid #2E2E2E
+	border-radius: 17px 0 17px 0
+	width: 210px
+	height: 50px
+	font-family: calibri
+	font-weight: 900
+	font-size: 19px
+	margin: 10px 0
+
+
+.upper-inputs
+	background: #454545
+	box-shadow: 0 0 10px rgba(0,0,0,0.5)
+	border: 1px solid #383838
+	padding: 0 5px
+	& input
+		color: #FFFFFF
+	&:last-child
+		border-radius: 0 17px 0 17px
+.input
+	background-color: transparent
+	border: none
+	width: 100%
+	height: 100%
+	font-family: calibri
+	font-weight: 900
+	font-size: 19px
+	text-align: center
+	&::placeholder
+		opacity: 1
+	&:focus::-webkit-input-placeholder 
+  	color: transparent
+	&:focus::-moz-placeholder 
+  	color: transparent
+	&:focus:-moz-placeholder 
+ 		color: transparent
+	&:focus:-ms-input-placeholder 
+ 		color: transparent
+
+
+
+.wrapper-of-lower-inputs
+	flex-grow: 1
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: space-between
+	box-shadow: 0 0 15px rgba(0,0,0,0.5)
+	& input
+		color: #4B4B4B
+.input-part-of-speech
+	display: none
+
+.part-of-speech__select
+	position: relative
+	z-index: 10
+	margin-top: 30px
+	background: linear-gradient(180deg, #F8F8F8, #ffffff)
+	box-shadow: 0 0 7px rgba(0,0,0,0.6)
+	border-radius: 17px 0 17px 0
+	width: 220px
+	height: 50px
+	font-family: calibri
+	font-weight: 900
+	font-size: 19px
+	cursor: pointer
+	color: #474747
+	text-align: center
+	display: flex
+	align-items: center
+	justify-content: center
+
+
+.part-of-speech__options
+	overflow: hidden
+	height: 0px
+	position: relative
+	top: -20px
+	color: #2A2A2A
+	cursor: pointer
+	transition: 0.3s
+	&.active
+		height: 170px
+	& div
+		display: flex
+		justify-content: center
+		align-items: center
+		height: 50px
+		background-color: #E9E9E9
+		border-bottom: 1px solid #D9D9D9
+		font-family: calibri
+		font-weight: 900
+		font-size: 19px
+		color: #6D6D6D
+		&:first-child
+			transition: 0.3s
+			height: 20px
+			border-bottom: none
+
+.options-swiper
+	text-align: center
+	padding-top: 1px
+	position: absolute
+	width: 20px
+	height: 19px
+	left: 50%
+	margin-left: -10px
+	z-index: 10
+	border-radius: 100%
+	background-color: #303030
+	color: #FFFFFF
+	font-family: calibri
+	font-weight: 900
+	font-size: 10px
+	opacity: 0
+	transition: 0.3s
+	cursor: pointer
+	&.active
+		opacity: 1
+		margin-top: -30px
+
+.wrapper-of-add-word
+	width: 100%
+	display: flex
+	flex-direction: column
+	align-items: center
+
+.is-showing
+	display: flex
+	flex-direction: column
+	align-items: center
+	color: #FEFEFE
+	font-family: calibri
+	font-weight: 900
+	font-size: 19px
+	margin-bottom: -3px
+	& p
+		margin: 0
+		margin-top: 12px
+		margin-bottom: 15px
+		line-height: 18px
+		text-align: center
+		max-width: 220px
+	& span
+		color: red
+		cursor: pointer
+
+.wrapper-of-answers
+	display: flex
+	background: #ffffff
+	box-shadow: 0 0 3px rgba(0,0,0,0.5)
+	border: 2px solid #fff
+	border-radius: 17px 0 17px 0
+	width: 220px
+	min-height: 45px
+	cursor: pointer
+	color: #4B4B4B
+	margin-bottom: 20px
+	overflow: hidden
+	& .answer
+		width: 50%
+		height: 100%
+		display: flex
+		justify-content: center
+		align-items: center
+		&.active
+			background-color: #454545
+			color: #fff
+
+	&:after
+		content: ''
+		position: absolute
+		margin-top: -2px
+		left: 50%
+		width: 2px
+		height: 49px
+		background-color: #4B4B4B
+	&.active:after
+		display: none
+
+.real-checkbox
+	display: none
+
+.error
+	color: red
+	font-family: calibri
+	font-weight: 900
+	font-size: 18px
+	margin: 0
+	margin-bottom: 9px
+	width: 230px
+	text-align: center
+	line-height: 18px
+
+
+.real-add-word
+	display: none
+
+.add-word
+	display: flex
+	justify-content: center
+	align-items: center
+	color: #474747
+	margin-bottom: 28px
+	width: 220px !important

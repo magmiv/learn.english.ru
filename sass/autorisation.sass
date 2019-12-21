@@ -1,0 +1,168 @@
+* 
+	outline: none
+
+html
+	height: 100%
+body
+	overflow-x: hidden
+	margin: 0
+	padding: 0
+	height: 100%
+	background: #393939
+
+.wrapper
+	transition: 0.5s
+	display: flex
+	width: 200%
+	height: 100%
+	margin: 0
+	font-family: calibri
+	font-weight: 900
+	font-size: 19px
+	color: #434343
+	user-select: none
+
+.menu-main
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	width: 50%
+	height: 100%
+
+	li
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 210px
+		height: 50px
+		max-width: 70%
+		border: 2px solid #2E2E2E
+		border-radius: 17px 0 17px 0
+		background: linear-gradient(180deg, #F8F8F8, #ffffff)
+		box-shadow: 0 0 3px rgba(0,0,0,0.4)		
+		cursor: pointer
+	.register
+		margin-top: 15px
+		border-radius: 0 17px 0 17px
+
+	.wrapper-of-vk
+		position: relative
+		top: 80px
+		display: flex
+		flex-direction: column
+		align-items: center
+		p
+			color: #fff
+			margin-bottom: 10px
+		img
+			width: 50px
+			cursor: pointer
+
+
+
+
+
+
+.wrapper-of-blocks
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	flex-grow: 1
+	width: 100%
+	p.error
+		text-align: center
+		width: 220px
+		opacity: 0
+		margin-bottom: -25px !important
+		border: none
+		color: red
+	p.active
+		position: relative
+		top: -25px
+		opacity: 1 !important
+
+
+@media (max-height: 460px)
+	.wrapper-of-blocks.login_mode
+		margin-top: 35px !important
+		justify-content: flex-start
+
+.menu-swipe
+	min-height: 460px
+	display: flex
+	flex-direction: column
+	margin-top: -15px
+	width: 50%
+	height: 100% !important
+	.login_mode
+		margin-top: 10px
+
+	input
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 200px
+		padding: 0 5px
+		height: 50px
+		margin: 7px
+		max-width: 70%
+		border: 2px solid #2E2E2E
+		border-radius: 17px 0 17px 0
+		background: linear-gradient(180deg, #F8F8F8, #ffffff)
+		text-align: center
+		box-shadow: 0 0 3px rgba(0,0,0,0.4)
+		font-family: calibri
+		font-weight: 900
+		font-size: 19px
+		color: #434343
+		&::placeholder
+			opacity: 1
+		&:focus::-webkit-input-placeholder 
+	  	color: transparent
+		&:focus::-moz-placeholder 
+	  	color: transparent
+		&:focus:-moz-placeholder 
+	 		color: transparent
+		&:focus:-ms-input-placeholder 
+	 		color: transparent
+
+	.rewerse
+		border-radius: 0 17px 0 17px
+
+	.submit
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 210px
+		height: 50px
+		margin: 0 auto 25px auto
+		max-width: 70%
+		position: relative
+		top: 10px
+		border: 2px solid #2E2E2E
+		border-radius: 17px 0 17px 0
+		background: linear-gradient(180deg, #F8F8F8, #ffffff)
+		text-align: center
+		box-shadow: 0 0 3px rgba(0,0,0,0.4)
+		cursor: pointer
+
+.back
+	display: flex
+	justify-content: center
+	align-items: center
+	position: relative
+	top: 32px
+	left: 19px
+	height: 20px
+	width: 20px
+	cursor: pointer
+
+	.back-arrow
+		width: 11px
+		height: 11px
+		border-top: 2px solid #fff
+		border-left: 2px solid #fff
+		transform: rotate(-45deg)
+

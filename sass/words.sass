@@ -1,0 +1,381 @@
+* 
+	outline: none
+
+html
+	height: 100%
+body
+	padding: 0
+	transition: 1s
+	margin: 0
+	height: 100%
+	user-select: none
+
+.wrapper-of-error
+	background-color: #393939
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	list-style-type: none
+	height: 100%
+
+	p
+		color: #ffffff
+		font-family: calibri
+		font-weight: 900
+		font-size: 21px
+		margin: 0
+		margin-bottom: 3px
+		max-width: 90%
+		width: 280px
+		text-align: center
+		line-height: 22px
+
+	a
+		text-decoration: none
+
+.munu__lists
+	margin: 7px 0
+	&:last-child
+		border-bottom: none
+	& a	
+		display: flex
+		align-items: center
+		justify-content: center
+		color: #434343
+		text-decoration: none
+		height: 100%
+		width: 100%
+
+.buttoms
+	background: linear-gradient(180deg, #F8F8F8, #ffffff)
+	box-shadow: 0 0 3px rgba(0,0,0,0.4)
+	border: 2px solid #2E2E2E
+	border-radius: 17px 0 17px 0
+	width: 210px
+	max-width: 70%
+	height: 50px
+	font-family: calibri
+	font-weight: 900
+	font-size: 19px
+	cursor: pointer
+
+
+
+.wrapper-of-table
+	width: 100%
+	display: flex
+	flex-direction: column
+	.row
+		min-width: 600px
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 100%
+		height: 50px
+		transition: 0.2s
+		border-bottom: 2px solid #DBDBDB
+
+			/* Самый верхний row */
+		&:first-child
+			position: sticky
+			top: 0
+			z-index: 3
+			background-color: #414141
+			border-bottom: none
+				/* Только у него цвет белый */
+			div
+				color: #FEFEFE
+				/* Кнопка сохранить изменения */
+				&:first-child
+					position: relative
+					left: 20px
+					margin-top: -100px
+					transition: 0.2s
+					&.active
+						margin-top: 0
+						cursor: pointer
+		/* Отступ у второго элемента */
+
+		/* Стили для всех строк */
+		div
+			padding: 1px
+			color: #434343
+			font-size: 19px
+			font-family: calibri
+			font-weight: 600
+			white-space: nowrap
+			overflow-x: hidden
+			text-overflow: clip
+			p
+			/* Инпуты, если активно редактирование */
+			input
+				padding: 0 4px
+				width: 100px
+				border: 1px solid #DBDBDB
+				border-radius: 10px 0 10px 0
+				box-shadow: 0 0 2px rgba(0,0,0,0.5)
+				height: 25px
+				color: #434343
+				font-size: 19px
+				font-family: calibri
+				font-weight: 600
+				text-align: center
+
+			&:nth-child(1)
+				width: 52px
+				/* Стиллизация чекбоксов */
+				input[type="checkbox"]+span,input[type="radio"]+span
+					position: relative
+					top: 3px
+					margin-left: 16px
+					appearance: none
+					width: 28px
+					height: 28px
+					border: 2px solid #DBDBDB
+					outline: none 
+					box-sizing: border-box
+					display: inline-block
+
+				input[type="checkbox"]:checked+span:before
+					content: ""
+					display: block
+					width: 9px
+					height: 16px
+					border: 0 solid #4D4D4D
+					border-width: 0 3px 3px 0
+					transform: rotateZ(45deg)
+					margin: -0px 6px
+					pointer-events: none
+
+
+			&:nth-child(2)
+				width: 130px
+				display: flex
+				align-items: center
+				justify-content: center
+
+
+			&:nth-child(3)
+				width: 130px
+				display: flex
+				align-items: center
+				justify-content: center
+
+
+			&:nth-child(4)
+				width: 130px
+				display: flex
+				align-items: center
+				justify-content: center
+
+
+			&:nth-child(5)
+				width: 130px
+				display: flex
+				align-items: center
+				justify-content: center
+				margin-right: 5px
+
+.word_id
+	position: absolute
+	top: -1000px
+	left: -1000px
+
+.was-change
+	position: absolute
+	top: -1000px
+
+/* Самый нижний row */
+.wrapper-of-last-row
+	position: absolute
+	z-index: 3
+	overflow: hidden
+	bottom: 0
+	width: 100%
+	min-width: 600px
+	height: 50px
+	display: flex
+	justify-content: center
+	background-color: #414141
+
+
+.last-row
+	height: 50px
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 600px
+	border: none
+	color: #fff
+	font-size: 19px
+	font-family: calibri
+	font-weight: 600
+	/* Кнопка выбрать все и ее инпут белого цвета */
+
+.chose-all
+	display: flex
+	min-width: 160px
+	align-items: center
+	input[type="checkbox"]+span,input[type="radio"]+span
+		position: relative
+		top: 3px
+		margin-left: 29px
+		margin-right: 15px
+		appearance: none
+		width: 25px
+		height: 25px
+		border: 2px solid #fff
+		outline: none 
+		box-sizing: border-box
+		display: inline-block
+
+	input[type="checkbox"]:checked+span:before
+		content: ""
+		display: block
+		width: 8px
+		height: 15px
+		border: 0 solid #fff
+		border-width: 0 3px 3px 0
+		transform: rotateZ(45deg)
+		margin: 0px 5px
+		pointer-events: none
+	
+	/* Для отмеченных */
+.edit-words-wrapper
+	display: flex
+	flex-direction: column
+	height: 50px
+	flex-grow: 1
+
+	.edit-words
+		height: 50px
+		transition: 0.2s
+		margin-left: -12px		
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		p
+			margin-right: 30px
+		i
+			margin-right: 18px
+			cursor: pointer
+
+		/* Зрение */
+		.vision
+			display: flex
+			align-items: center
+			justify-content: center
+			width: 60px
+			height: 25px
+			margin-right: 17px
+			i
+				margin-right: 0
+			p
+				position: relative
+				top: -1px
+				margin: 0 2px
+
+
+.crawling-out-delete-block
+	display: flex
+	justify-content: flex-end
+	align-items: center
+	p
+		margin-right: 5px
+		&:first-child
+			margin-right: 20px
+
+	.delete-yes
+		margin-right: 6px
+		cursor: pointer
+
+	.delete-no
+		margin-right: 0
+		cursor: pointer
+
+
+
+
+
+
+
+
+
+
+.active
+	display: block
+
+/* Если "не показывать блок" */
+.hidden
+	div
+		color: rgba(67,67,67,0.5) !important
+		input
+			color: rgba(67,67,67,0.5) !important
+
+.error
+	border: 2px solid red !important
+	box-shadow: 0 0 2px rgba(255,0,0,0.5) !important
+
+
+
+
+
+
+.part-of-speech
+	display: flex
+	flex-direction: column
+	height: 25px
+
+.part-of-speech__select
+	z-index: 1
+	width: 100px !important
+	height: 25px
+	position: relative
+	background-color: #fff
+	border: 1px solid #DBDBDB
+	border-radius: 10px 0 10px 0
+	box-shadow: 0 0 2px rgba(0,0,0,0.5)
+	cursor: pointer
+	display: flex
+	align-items: center
+	justify-content: center
+
+.wrapper-of-options
+	transition: 0.1s
+	overflow: hidden
+	position: absolute
+	height: 0px
+	margin-top: 155px
+	&.active
+		height: 143px
+		.part-of-speech__options
+			margin-top: -15px
+
+.part-of-speech__options
+	display: flex
+	flex-direction: column
+	position: relative
+	width: 98px !important
+	transition: 0.1s
+	margin-top: -290px
+	color: #2A2A2A
+	border-bottom: none
+	border-radius: 0 0 10px 0
+	background-color: #F4F4F4
+	cursor: pointer
+	border: 2px solid #DBDBDB
+
+	& div
+		display: flex
+		justify-content: center
+		align-items: center
+		height: 25px
+		width: 100px !important	
+		border-bottom: 2px solid #DBDBDB
+		color: #6D6D6F !important
+		font-size: 19px !important
+		&:last-child
+			border-bottom: none
+		&:first-child
+			margin-top: 20px
